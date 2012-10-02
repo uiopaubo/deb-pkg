@@ -3,7 +3,7 @@ Section: electronics
 Priority: extra
 Maintainer: Xiangfu Liu <xiangfu@openmobilefree.net>
 Build-Depends: debhelper (>=  7.4.10), pkg-config, 
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: https://github.com/Wolfgang-Spraul/fpgatools
 Vcs-Git: git://github.com/Wolfgang-Spraul/fpgatools.git
 
@@ -12,12 +12,12 @@ Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: libs of fpgatools
- small independent command line utilities, no GUI
- plain C, no C++
- simple Makefiles
- text-based file formats
- no documentation - read the sources
- automatic test suite
+ The package provides a shared library for small independent
+ command line utilities contributing to the fpgatools.
+  * plain C, no C++
+  * simple Makefiles
+  * text-based file formats
+  * automatic test suite
 
 Package: fpgatools
 Section: utils

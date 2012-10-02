@@ -6,7 +6,12 @@
 
 set -e
 
-: ${REPO=$(git rev-parse --git-dir)}
+if ! which git; then
+   echo "Please install the git version control system to retrieve source code."
+   exit -1
+fi
+
+: ${REPO=git://github.com/Wolfgang-Spraul/fpgatools.git}
 : ${BRANCH=remotes/origin/master}
 
 mkdir debian-orig-source
@@ -26,5 +31,5 @@ upstream_version="${release}+${date}"
 
 # Generate tarball.
 echo "packaging $(git rev-parse --short FETCH_HEAD)"
-git archive FETCH_HEAD |
+git archive --format=tar --prefix="fpgatools_${date}/" FETCH_HEAD |
 	gzip -n -9 >"fpgatools_$upstream_version.orig.tar.gz"
