@@ -19,6 +19,17 @@ Description: libs of fpgatools
   * text-based file formats
   * automatic test suite
 
+Package: libfpga-dev
+Architecture: any
+Section: libdevel
+Depends: libfpga0 (= ${binary:Version}), ${misc:Depends}
+Description: libs of fpgatools -- development files
+ The package provides a shared library for small independent
+ command line utilities contributing to the fpgatools.
+ .
+ This package contains headers and libraries for developing bits file 
+ that makes use of libfpga.
+
 Package: fpgatools
 Section: utils
 Architecture: any
