@@ -35,8 +35,8 @@ Package: fpgatools
 Section: utils
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libfpga0 (= ${binary:Version})
-Description: tool to program flexible programmable gate arrays
- fpgatools is a toolchain to program flexible programmable gate arrays
- (FPGAs). one supported chip at this time is the xc6slx9, a cheap but
- powerful 45nm-generation chip with about 2400 LUTs, block ram and
- multiply-accumulate devices
+Description: tool to program field-programmable gate array
+ fpgatools is a toolchain to program field-programmable gate array(FPGA).
+ one supported chip at this time is the xc6slx9, a cheap but  powerful 
+ 45nm-generation chip with about 2400 LUTs, block ram and multiply-accumulate
+ devices
