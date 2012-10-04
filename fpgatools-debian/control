@@ -5,6 +5,7 @@ Maintainer: Xiangfu Liu <xiangfu@openmobilefree.net>
 Build-Depends: debhelper (>=  7.4.10), dpkg-dev (>= 1.16.1~),
  bash (>= 4), chrpath (>= 0.13)
 Standards-Version: 3.9.4
+DM-Upload-Allowed: yes
 Homepage: https://github.com/Wolfgang-Spraul/fpgatools
 Vcs-Git: git://github.com/Wolfgang-Spraul/fpgatools.git
 
@@ -12,8 +13,13 @@ Package: libfpga0
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: libs of fpgatools
- The package provides a shared library for small independent
+Description: libraries of fpgatools
+ fpgatools is a toolchain to program field-programmable gate array
+ (FPGA).  The only supported chip at this time is the xc6slx9, a cheap
+ but powerful 45nm-generation chip with about 2400 LUTs, block ram and
+ multiply-accumulate devices.
+ .
+ This package provides a shared library for small independent
  command line utilities contributing to the fpgatools.
   * plain C, no C++
   * simple Makefiles
@@ -24,9 +30,11 @@ Package: libfpga-dev
 Architecture: any
 Section: libdevel
 Depends: libfpga0 (= ${binary:Version}), ${misc:Depends}
-Description: libs of fpgatools -- development files
- The package provides a shared library for small independent
- command line utilities contributing to the fpgatools.
+Description: development files for fpgatools
+ fpgatools is a toolchain to program field-programmable gate array
+ (FPGA).  The only supported chip at this time is the xc6slx9, a cheap
+ but powerful 45nm-generation chip with about 2400 LUTs, block ram and
+ multiply-accumulate devices.
  .
  This package contains headers and libraries for developing bits file 
  that makes use of libfpga.
@@ -36,7 +44,7 @@ Section: utils
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libfpga0 (= ${binary:Version})
 Description: tool to program field-programmable gate array
- fpgatools is a toolchain to program field-programmable gate array(FPGA).
- one supported chip at this time is the xc6slx9, a cheap but  powerful 
- 45nm-generation chip with about 2400 LUTs, block ram and multiply-accumulate
- devices
+ fpgatools is a toolchain to program field-programmable gate array
+ (FPGA).  The only supported chip at this time is the xc6slx9, a cheap
+ but powerful 45nm-generation chip with about 2400 LUTs, block ram and
+ multiply-accumulate devices.

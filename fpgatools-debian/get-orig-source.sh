@@ -31,5 +31,5 @@ upstream_version="${release}+${date}"
 
 # Generate tarball.
 echo "packaging $(git rev-parse --short FETCH_HEAD)"
-git archive --format=tar --prefix="fpgatools_${date}/" FETCH_HEAD |
+git archive --format=tar --prefix="fpgatools-${date}/" FETCH_HEAD |
 	gzip -n -9 >"fpgatools_$upstream_version.orig.tar.gz"
