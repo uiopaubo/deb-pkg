@@ -11,9 +11,3 @@
 
 %:
 	dh $@  --with autotools-dev
-
-override_dh_auto_clean:
-	$(MAKE) clean
-
-configure: configure.ac
-	AUTOMAKE="automake --foreign" autoreconf -is
