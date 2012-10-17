@@ -1,0 +1,30 @@
+Source: toped
+Section: electronics
+Priority: extra
+Maintainer: Xiangfu Liu <xiangfu@openmobilefree.net>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev,
+ flex, bison, libglu1-mesa-dev, libgl1-mesa-dev, libglew-dev,
+ libwxgtk2.8-dev
+Standards-Version: 3.9.4
+Homepage: http://toped.org.uk/
+Vcs-Svn: http://toped.googlecode.com/svn/trunk/
+Vcs-Browser: http://code.google.com/p/toped/source/browse/trunk
+
+Package: toped
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Toped is a cross-platform IC layout editor
+ Toped is a cross-platform IC layout editor supporting GDS,
+ OASIS and CIF formats. it is an open source project licensed
+ under the GNU General Public License. the project is under
+ active development
+ .
+ Toped is driven by a build-in script interpreter. the script
+ is designed to code and facilitate the layout generation and
+ is used also for configuration. automatic session recovery,
+ undo with unlimited depth and customizable GUI are among the
+ product features
+ .
+ Toped focuses on rendering speed and quality of the screen
+ output. the project uses the full power of OpenGL in terms of
+ speed as well as unrestricted number of colors and fill patterns
