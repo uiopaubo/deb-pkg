@@ -1,1 +1,4 @@
 usr/bin/toped
+usr/share/applications/*
+usr/share/toped/icons/*
+usr/share/toped/fonts/*

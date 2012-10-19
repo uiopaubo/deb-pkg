@@ -14,7 +14,8 @@ Package: toped
 Architecture: any
 Section: utils
 Depends: ${shlibs:Depends}, ${misc:Depends}, 
- toped-libs (= ${binary:Version}), toped-data (= ${source:Version})
+ toped-libs (= ${binary:Version}), toped-utils (= ${binary:Version}),
+ toped-tll-libs (= ${source:Version})
 Description: Open source IC layout editor 
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
@@ -45,13 +46,24 @@ Description: libraries of toped
  .
  This package provides a shared library for toped
 
-Package: toped-data
-Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, octave
-Description: data files of toped
+Package: toped-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, racket
+Description: some utils work with toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
  under the GNU General Public License. the project is under
  active development
  .
- This package provides data files for toped
+ This package provides some utils work with toped
+
+Package: toped-tll-libs
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, octave
+Description: tell libs of toped
+ Toped is a cross-platform IC layout editor supporting GDS,
+ OASIS and CIF formats. it is an open source project licensed
+ under the GNU General Public License. the project is under
+ active development
+ .
+ This package provides tell libs for toped
