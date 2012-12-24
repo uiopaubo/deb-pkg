@@ -1,0 +1,10 @@
+fpgatools for Debian
+-----------------
+fpgatools Debian package include design libs and two executable binaries:
+- fp2bit  converts .fp floorplan into .bit bitstream
+- bit2fp  converts .bit bitstream into .fp floorplan
+
+To create your own design. you need some base C knowledge + libfpga.
+there are some example C files in project vcs page. please read those
+example C files and README before start working with fpgatools
+ -- Xiangfu <xiangfu@openmobilefree.net>, Mon, 24 Dec 2012 22:25:14 +0800
