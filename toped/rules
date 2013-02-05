@@ -18,4 +18,4 @@ override_dh_auto_configure:
 REV=2361
 debiandir_SQ = $(subst ','\'',$(dir $(lastword $(MAKEFILE_LIST))))
 get-orig-source:
-        REV='$(REV)' sh '$(debiandir_SQ)'get-orig-source.sh
+	REV='$(REV)' sh '$(debiandir_SQ)'get-orig-source.sh
