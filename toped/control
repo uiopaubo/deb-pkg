@@ -30,18 +30,18 @@ Description: Open source IC layout editor
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
  under the GNU General Public License. the project is under
- active development
+ active development.
  .
  Toped is driven by a build-in script interpreter. the script
  is designed to code and facilitate the layout generation and
  is used also for configuration. automatic session recovery,
  undo with unlimited depth and customizable GUI are among the
- product features
+ product features.
  .
  Toped focuses on rendering speed and quality of the screen
  output. the project uses the full power of OpenGL in terms of
  speed as well as unrestricted number of colors and fill
- patterns
+ patterns.
 
 Package: toped-libs
 Architecture: any
@@ -55,9 +55,9 @@ Description: libraries of toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
  under the GNU General Public License. the project is under
- active development
+ active development.
  .
- This package provides a shared library for toped
+ This package provides a shared library for toped.
 
 Package: toped-tll-libs
 Architecture: all
@@ -68,9 +68,9 @@ Description: tell libs of toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
  under the GNU General Public License. the project is under
- active development
+ active development.
  .
- This package provides tell libs for toped
+ This package provides tell libs for toped.
 
 Package: toped-utils
 Architecture: any
@@ -81,6 +81,6 @@ Description: some utils work with toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
  under the GNU General Public License. the project is under
- active development
+ active development.
  .
- This package provides some utils work with toped
+ This package provides some utils work with toped.
