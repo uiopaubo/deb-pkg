@@ -7,8 +7,8 @@ Build-Depends: debhelper (>= 9), autotools-dev,
  libglew-dev, libwxgtk2.8-dev, zlib1g-dev
 Standards-Version: 3.9.4
 Homepage: http://toped.org.uk/
-Vcs-Svn: http://toped.googlecode.com/svn/trunk/
-Vcs-Browser: http://code.google.com/p/toped/source/browse/trunk
+Vcs-Git: git://github.com/xiangfu/deb-pkg.git
+Vcs-Browser: https://github.com/xiangfu/deb-pkg/tree/master/toped
 
 Package: toped
 Architecture: any
