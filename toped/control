@@ -2,9 +2,16 @@ Source: toped
 Section: electronics
 Priority: extra
 Maintainer: Xiangfu Liu <xiangfu@openmobilefree.net>
-Build-Depends: debhelper (>= 9), autotools-dev,
- flex, bison, libglu1-mesa-dev, libgl1-mesa-dev,
- libglew-dev, libwxgtk2.8-dev, zlib1g-dev
+Build-Depends:
+ autotools-dev,
+ bison,
+ debhelper (>= 9),
+ flex,
+ libgl1-mesa-dev,
+ libglew-dev,
+ libglu1-mesa-dev,
+ libwxgtk2.8-dev,
+ zlib1g-dev
 Standards-Version: 3.9.4
 Homepage: http://toped.org.uk/
 Vcs-Git: git://github.com/xiangfu/deb-pkg.git
@@ -13,10 +20,13 @@ Vcs-Browser: https://github.com/xiangfu/deb-pkg/tree/master/toped
 Package: toped
 Architecture: any
 Section: utils
-Depends: ${shlibs:Depends}, ${misc:Depends}, 
- toped-libs (= ${binary:Version}), toped-tll-libs (= ${source:Version}),
- toped-utils (= ${binary:Version})
-Description: Open source IC layout editor 
+Depends:
+ toped-libs (= ${binary:Version}),
+ toped-tll-libs (= ${source:Version}),
+ toped-utils (= ${binary:Version}),
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: Open source IC layout editor
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
  under the GNU General Public License. the project is under
@@ -30,14 +40,17 @@ Description: Open source IC layout editor
  .
  Toped focuses on rendering speed and quality of the screen
  output. the project uses the full power of OpenGL in terms of
- speed as well as unrestricted number of colors and fill 
+ speed as well as unrestricted number of colors and fill
  patterns
 
 Package: toped-libs
 Architecture: any
 Section: libs
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends:
+ ${misc:Pre-Depends}
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
 Description: libraries of toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
@@ -48,7 +61,9 @@ Description: libraries of toped
 
 Package: toped-tll-libs
 Architecture: all
-Depends: ${misc:Depends}, octave
+Depends:
+ octave,
+ ${misc:Depends}
 Description: tell libs of toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
@@ -59,7 +74,9 @@ Description: tell libs of toped
 
 Package: toped-utils
 Architecture: any
-Depends: ${misc:Depends}, racket
+Depends:
+ racket,
+ ${misc:Depends}
 Description: some utils work with toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
