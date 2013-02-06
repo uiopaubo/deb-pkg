@@ -13,7 +13,21 @@
 	dh $@  --with autotools-dev
 
 override_dh_auto_configure:
+	automake
 	dh_auto_configure -- --enable-utils
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f config.status config.log
+	find ./ -name Makefile.in -exec rm -f {} \;
+	rm -f tpd_ifaces/cif_lex.cc
+	rm -f tpd_ifaces/cif_yacc.cc
+	rm -f tpd_ifaces/cif_yacc.h
+	rm -f tpd_ifaces/cif_yacc.output
+	rm -f tpd_parser/tell_lex.cc
+	rm -f tpd_parser/tell_yacc.cc
+	rm -f tpd_parser/tell_yacc.h
+	rm -f tpd_parser/tell_yacc.output
 
 REV=2361
 debiandir_SQ = $(subst ','\'',$(dir $(lastword $(MAKEFILE_LIST))))

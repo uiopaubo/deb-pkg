@@ -48,7 +48,7 @@ Description: libraries of toped
 
 Package: toped-tll-libs
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, octave
+Depends: ${misc:Depends}, octave
 Description: tell libs of toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
@@ -59,7 +59,7 @@ Description: tell libs of toped
 
 Package: toped-utils
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, racket
+Depends: ${misc:Depends}, racket
 Description: some utils work with toped
  Toped is a cross-platform IC layout editor supporting GDS,
  OASIS and CIF formats. it is an open source project licensed
