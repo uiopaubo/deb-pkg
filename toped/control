@@ -28,13 +28,13 @@ Depends:
  ${shlibs:Depends}
 Description: Open source IC layout editor
  Toped is a cross-platform IC layout editor supporting GDS,
- OASIS and CIF formats. it is an open source project licensed
- under the GNU General Public License. the project is under
+ OASIS and CIF formats. It is an open source project licensed
+ under the GNU General Public License. The project is under
  active development.
  .
- Toped is driven by a build-in script interpreter. the script
+ Toped is driven by a build-in script interpreter. The script
  is designed to code and facilitate the layout generation and
- is used also for configuration. automatic session recovery,
+ is used also for configuration. Automatic session recovery,
  undo with unlimited depth and customizable GUI are among the
  product features.
  .
@@ -53,8 +53,8 @@ Depends:
  ${shlibs:Depends}
 Description: libraries of toped
  Toped is a cross-platform IC layout editor supporting GDS,
- OASIS and CIF formats. it is an open source project licensed
- under the GNU General Public License. the project is under
+ OASIS and CIF formats. It is an open source project licensed
+ under the GNU General Public License. The project is under
  active development.
  .
  This package provides a shared library for toped.
@@ -66,11 +66,11 @@ Depends:
  ${misc:Depends}
 Description: tell libs of toped
  Toped is a cross-platform IC layout editor supporting GDS,
- OASIS and CIF formats. it is an open source project licensed
- under the GNU General Public License. the project is under
+ OASIS and CIF formats. It is an open source project licensed
+ under the GNU General Public License. The project is under
  active development.
  .
- This package provides tell libs for toped.
+ This package provides tll libs for toped.
 
 Package: toped-utils
 Architecture: any
@@ -79,8 +79,8 @@ Depends:
  ${misc:Depends}
 Description: some utils work with toped
  Toped is a cross-platform IC layout editor supporting GDS,
- OASIS and CIF formats. it is an open source project licensed
- under the GNU General Public License. the project is under
+ OASIS and CIF formats. It is an open source project licensed
+ under the GNU General Public License. The project is under
  active development.
  .
  This package provides some utils work with toped.
