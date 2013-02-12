@@ -14,8 +14,6 @@ Build-Depends:
  zlib1g-dev
 Standards-Version: 3.9.4
 Homepage: http://toped.org.uk/
-Vcs-Git: git://github.com/xiangfu/deb-pkg.git
-Vcs-Browser: https://github.com/xiangfu/deb-pkg/tree/master/toped
 
 Package: toped
 Architecture: any
