@@ -1,0 +1,17 @@
+Index: fped/Makefile
+===================================================================
+--- fped.orig/Makefile
++++ fped/Makefile
+@@ -34,9 +34,10 @@ PNGS = intro-1.png intro-2.png intro-3.p
+
+ SHELL = /bin/bash
+
++PKG_CONFIG ?= pkg-config
+ CPPFLAGS +=
+-CFLAGS_GTK = `pkg-config --cflags gtk+-2.0`
+-LIBS_GTK = `pkg-config --libs gtk+-2.0`
++CFLAGS_GTK = `$(PKG_CONFIG) --cflags gtk+-2.0`
++LIBS_GTK = `$(PKG_CONFIG) --libs gtk+-2.0`
+
+ CFLAGS_WARN = -Wall -Wshadow -Wmissing-prototypes \
+ 	      -Wmissing-declarations -Wno-format-zero-length
