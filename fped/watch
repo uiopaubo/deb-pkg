@@ -1,0 +1,2 @@
+version=4
+opts="mode=git, pretty=0.1+%cd" git://projects.qi-hardware.com/fped.git HEAD
